@@ -22,16 +22,28 @@ li {
 
 ul {
     list-style: none;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
 li {
-    border-radius: 35px;
+    border-radius: 50%;
+    /* border: #262E38; */
     background-color: #262E38;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    display: inline;
+    /* width: 4rem; */
+    /* height: 4rem; */
 }
 
 h1 {
     color: white;
+}
+
+p {
+    text-align: left;
+    margin: 1rem 0.5rem;
 }
 
 button {
@@ -44,6 +56,7 @@ button {
     color: white;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 1rem 0;
 }
 
 .container-rate-us {
@@ -53,6 +66,7 @@ button {
     flex-flow: column wrap;
     background-color: #131518;
     width: 80%;
+    padding: 1rem 0;
 }
 
 footer {
