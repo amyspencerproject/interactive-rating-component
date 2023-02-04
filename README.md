@@ -63,11 +63,9 @@ Now you can work from there, using your eye to get everything else close
 - Mobile-first workflow
 - vanilla JS (the old skool best!)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 
 ### What I learned
-
+Was not sure how to get the nice round rating buttons for this design. Started with using an unordered list with a border-radius of 50% for all the ```<li>``` elements. Quickly realised that this would not work with JS. Thought about making each rating choice a seperate button but figured that would add a lot of extra steps with JS and then the user would be submitting by choosing a rating and not with a proper submitt button. Finally decided on a radio button form where only one rating choice could be made and submitted by the user. This would make the JS much easier and the user experiance intuitive. Learned about radio button forms from this [Blog Post](https://blog.hubspot.com/website/html-radio-button) and [W3schools page](https://www.w3schools.com/tags/att_input_type_radio.asp).
 
 ## Author
 

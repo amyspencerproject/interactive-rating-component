@@ -46,7 +46,25 @@ p {
     margin: 1rem 0.5rem;
 }
 
-button {
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.rating-from {
+    color: white;
+}
+
+.rating-select {
+    background-color: #131518;
+}
+
+.rating-label {
+    color: white;
+}
+
+#submit-button {
     background-color: #FC7614;
     width: 80%;
     border-radius: 25px;
