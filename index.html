@@ -29,10 +29,14 @@
       <!-- Rating state start -->
       <div class="form-container">
         <div class="form-wrapper">
-          <img src="./images/icon-star.svg" alt="Orange star icon" />
+          <img
+            class="image-star"
+            src="./images/icon-star.svg"
+            alt="Orange star icon"
+          />
 
-          <h1>How did we do?</h1>
-          <p>
+          <h1 class="request-header">How did we do?</h1>
+          <p class="request-text">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
@@ -63,8 +67,25 @@
               5
             </label>
 
-            <input type="submit" value="Submit" id="submit-button" />
+            <input type="submit" value="Submit" class="submit-button" />
           </form>
+
+          <!-- Thank you state start -->
+
+          <p class="hide selected-text">
+            You selected
+            <!-- Add rating here -->
+            out of 5
+          </p>
+
+          <h1 class="hide thankyou-header">Thank you!</h1>
+
+          <p class="hide thankyou-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+
+          <!-- Thank you state end -->
         </div>
       </div>
     </main>

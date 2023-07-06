@@ -71,7 +71,9 @@ input[type="radio"] {
 
 **Other Things Learned**
 
-- Used a radial gradient with two colors being the same color. Wasn't sure this was correct and double checked the Figma file. It looked just like the design.
+- Used a radial gradient with two colors being the same color. Wasn't sure this was correct and double checked the Figma file. A gradient with two colors in CSS is just the same as a mono-colored background. Going to have to come up with something to fix this.
+
+- Reminded myself that it is good practice to style on classes and use ids for programmatic things like JS queriers.
 
 ### Continued development
 

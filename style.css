@@ -100,35 +100,65 @@ main {
 }
 
 .form-container {
-  background: radial-gradient(var(--gradient-black), var(--gradient-black));
+  /* background: radial-gradient(var(--gradient-black), var(--gradient-black)); */
   border-radius: 15px;
   margin: 9.6rem 1.5rem;
+  background-color: var(--very-drk-blue);
 }
 
 .form-wrapper {
-  display: flex;
+  display: grid;
+  /* display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
+  align-items: flex-start; */
   margin: 1.5rem;
 }
 
 p {
   color: var(--light-grey);
-  text-align: left;
-  margin: 1rem 0.5rem;
 }
 
 h1 {
   color: var(--white);
 }
 
-/* ======= Radio Button Form ======= */
-. {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row nowrap;
+.hide {
+  visibility: hidden;
 }
-/* remove native radio input */
+
+.image-star {
+  border-radius: 50%;
+  background: var(--drk-blue);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.request-text {
+  margin: 1rem 0.5rem 1rem 0;
+  text-align: left;
+}
+
+/* ======== Thank You JSX styles ======= */
+
+.selected-text {
+  color: var(--orange);
+  border-radius: 22.5px;
+  background: var(--drk-blue);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.thankyou-header {
+  text-align: center;
+}
+
+.thankyou-text {
+  text-align: center;
+}
+
+/* ======= Radio Button Form ======= */
+
+/* remove native radio input across all browsers*/
 input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
@@ -140,27 +170,37 @@ input[type="radio"] {
   color: var(--med-grey);
   font-size: 0.875rem;
   font-weight: 700;
-}
-
-.rating-form {
-  color: var(--white);
-  display: flex;
-  flex-flow: column wrap;
-  align-items: left;
-  width: 80%;
-}
-
-#submit-button {
-  background-color: var(--orange);
-  width: 80%;
-  border-radius: 25px;
+  text-align: center;
+  background-color: var(--drk-blue);
+  border-radius: 50%;
   padding: 1rem;
+  margin-inline: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.form-control {
+  color: var(--white);
+  margin-top: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.submit-button {
+  background-color: var(--orange);
+  width: 25rem;
+  border-radius: 25px;
+  padding: 0.75rem;
   box-shadow: none;
   border: none;
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
-  margin: 1rem 0;
+  margin: 3rem 0;
   align-self: center;
 }
 
