@@ -69,6 +69,8 @@ input[type="radio"] {
 }
 ```
 
+- Used a grid layout for the radio buttons. Allowed for an overall left-alignment and spacing with `gap`between each button.
+
 **Other Things Learned**
 
 - Used a radial gradient with two colors being the same color. Wasn't sure this was correct and double checked the Figma file. A gradient with two colors in CSS is just the same as a mono-colored background. Going to have to come up with something to fix this.
