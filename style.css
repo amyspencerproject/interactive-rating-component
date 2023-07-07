@@ -160,14 +160,21 @@ input[type="radio"] {
   /* remove native radio input across all browsers*/
   -webkit-appearance: none;
   appearance: none;
-  display: none;
   margin: 0;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  /* position: relative; */
+}
+
+/* remove fielset border */
+fieldset {
+  border: none;
 }
 
 input + label {
   border-radius: 50%;
-  display: grid;
-  place-content: center;
   color: var(--med-grey);
   font-size: 0.875rem;
   font-weight: 700;
@@ -188,27 +195,26 @@ input:hover + label {
 }
 
 input:focus-visible + label {
-  border: solid 1px var(--orange);
-  /* outline: solid 3px red; */
-}
-
-input:focus + label {
   border: solid 3px var(--orange);
-  /* background-color: fuchsia; */
-}
-
-.radio-buttons-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  /* gap: 2.5rem; */
 }
 
 .label-control {
+  position: relative;
+  right: 7.5%;
+}
+
+.radio-buttons-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  /* display: grid;
+  grid-template-columns: repeat(5, 50px); */
+  /* gap: 2.5rem; */
 }
 
 .form-control {
   color: var(--white);
   margin-top: 1.5rem;
+  border: none;
 }
 
 .submit-button {
@@ -223,6 +229,12 @@ input:focus + label {
   text-transform: uppercase;
   margin: 3rem 0;
   align-self: center;
+}
+
+.submit-button:hover {
+  background-color: var(--white);
+  border: solid 1px var(--orange);
+  color: var(--orange);
 }
 
 /* ======= Footer ======= */

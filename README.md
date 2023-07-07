@@ -74,6 +74,13 @@ input[type="radio"] {
 - Wasn't sure wether to style input or label?
   ![](./Screenshot%20discord%20answer.png)
 
+- Pulled the `<input>` out of the `<label>` and added the `for= {id of input}` as an attribute in for `<label`
+- Added a `<fieldset>` around the radio buttons
+- styled the :hover, :checked, :focus-visible using adjacent sibling combinators
+- Used positon:relative on the label to overlap it with the input. I couldn't get this to work in a grid container?? Had to switch to flex with a row nowrap.
+- appearance: none allows input to be picked up by screen readers
+- focus-visibility allows keyboard users to know what button is selected with out annoying the mouse over users
+
 **Other Things Learned**
 
 - Used a radial gradient with two colors being the same color. Wasn't sure this was correct and double checked the Figma file. A gradient with two colors in CSS is just the same as a mono-colored background. Going to have to come up with something to fix this.
@@ -88,6 +95,9 @@ input[type="radio"] {
 - [Radio Buttons](https://www.w3schools.com/tags/att_input_type_radio.asp) - W3schools page
 - [Radial Gradients CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)
 - [Custom Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
+- [Fieldset for Radio Buttons](https://www.w3.org/WAI/tutorials/forms/grouping/#radio-buttons) - this is an accesiblity thing and makes it very clear that the buttons are in a group
+- [Adjacent Sibling Combinators](https://moderncss.dev/guide-to-advanced-css-selectors-part-one/#adjacent-sibling-combinator)
+- [Focus Visible CSS](https://css-tricks.com/almanac/selectors/f/focus-visible/)
 
 ## Author
 
