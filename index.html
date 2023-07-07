@@ -22,6 +22,8 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
+
+    <script src="./script.js" defer></script>
   </head>
 
   <body>
@@ -61,18 +63,24 @@
 
             <input type="submit" value="Submit" class="submit-button" />
           </form>
+        </div>
 
-          <!-- Thank you state start -->
-
-          <p class="hide selected-text">
+        <!-- Thank you state start -->
+        <div class="thankyou-wrapper">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt=""
+            class="thankyou-image"
+          />
+          <p class="selected-text">
             You selected
             <!-- Add rating here -->
             out of 5
           </p>
 
-          <h1 class="hide thankyou-header">Thank you!</h1>
+          <h1 class="thankyou-header">Thank you!</h1>
 
-          <p class="hide thankyou-text">
+          <p class="thankyou-text">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
           </p>

@@ -123,6 +123,7 @@ h1 {
 
 .hide {
   visibility: hidden;
+  display: none;
 }
 
 .image-star {
@@ -139,6 +140,20 @@ h1 {
 
 /* ======== Thank You JSX styles ======= */
 
+.thankyou-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.thankyou-wrapper > p {
+  margin: 1rem 1.5rem;
+}
+.thankyou-image {
+  width: 50%;
+  margin: 2.5rem 0 1rem 0;
+}
 .selected-text {
   color: var(--orange);
   border-radius: 22.5px;
@@ -209,9 +224,6 @@ input:focus-visible + label {
 .radio-buttons-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  /* display: grid;
-  grid-template-columns: repeat(5, 50px); */
-  /* gap: 2.5rem; */
 }
 
 .form-control {
@@ -222,7 +234,7 @@ input:focus-visible + label {
 
 .submit-button {
   background-color: var(--orange);
-  width: 25rem;
+  width: 18rem;
   border-radius: 25px;
   padding: 0.75rem;
   box-shadow: none;

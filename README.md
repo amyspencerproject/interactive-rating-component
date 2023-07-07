@@ -54,7 +54,7 @@ Users should be able to:
 - Finally decided on a radio button form where only one rating choice could be made and submitted by the user. This would make the JS much easier and the user experiance intuitive.
 
 - Radio buttons are used so often that they have a lot of browser specific default styling. Look at the buttons on left in Firefox and on the right in Chrome.
-  ![](./screenshot%20radio%20buttons.png)
+  ![](./screenshots/screenshot%20radio%20buttons.png)
 - To wipe out the browser styling use the following reset. You must add custom styling if you do this because it really wipes out the buttons entirely
 
 ```
@@ -72,7 +72,7 @@ input[type="radio"] {
 - Used a grid layout for the radio buttons. Allowed for an overall left-alignment and spacing with `gap` between each button.
 
 - Wasn't sure wether to style input or label?
-  ![](./Screenshot%20discord%20answer.png)
+  ![](./screenshots/Screenshot%20discord%20answer.png)
 
 - Pulled the `<input>` out of the `<label>` and added the `for= {id of input}` as an attribute in for `<label`
 - Added a `<fieldset>` around the radio buttons
@@ -86,6 +86,10 @@ input[type="radio"] {
 - Used a radial gradient with two colors being the same color. Wasn't sure this was correct and double checked the Figma file. A gradient with two colors in CSS is just the same as a mono-colored background. Going to have to come up with something to fix this.
 
 - Reminded myself that it is good practice to style on classes and use ids for programmatic things like JS queriers.
+
+**JS**
+
+- Put event listener on the form not on the submit button click
 
 ### Continued development
 
