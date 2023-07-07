@@ -69,7 +69,10 @@ input[type="radio"] {
 }
 ```
 
-- Used a grid layout for the radio buttons. Allowed for an overall left-alignment and spacing with `gap`between each button.
+- Used a grid layout for the radio buttons. Allowed for an overall left-alignment and spacing with `gap` between each button.
+
+- Wasn't sure wether to style input or label?
+  ![](./Screenshot%20discord%20answer.png)
 
 **Other Things Learned**
 
