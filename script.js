@@ -3,6 +3,7 @@ const ratingValueByName = document.getElementsByName("rating");
 // const ratingValue = document.getElementById("rating-form").value;
 // const ratingValueInput = document.querySelector('input[  name="rating"].value');
 const thankyou = document.querySelector("thankyou-wrapper");
+const selectedText = document.querySelector("selected-text");
 const form = document.querySelector("form-wrapper");
 
 addEventListener("submit", (e) => {
