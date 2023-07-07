@@ -100,15 +100,17 @@ main {
 }
 
 .form-container {
-  /* background: radial-gradient(var(--gradient-black), var(--gradient-black)); */
+  background: radial-gradient(var(--gradient-black), var(--gradient-black));
   border-radius: 15px;
   margin: 9.6rem 1.5rem;
-  background-color: var(--very-drk-blue);
+  max-width: 20.43rem;
+  /* background-color: var(--very-drk-blue); */
 }
 
 .form-wrapper {
   display: grid;
   margin: 1.5rem;
+  grid-template-columns: minmax(30px, auto);
 }
 
 p {
@@ -165,7 +167,8 @@ input[type="radio"] {
   padding: 1rem;
   width: 3rem;
   height: 3rem;
-  /* position: relative; */
+  position: relative;
+  right: 0;
 }
 
 /* remove fielset border */
@@ -200,7 +203,7 @@ input:focus-visible + label {
 
 .label-control {
   position: relative;
-  right: 7.5%;
+  right: 10%;
 }
 
 .radio-buttons-wrapper {
@@ -252,4 +255,7 @@ input:focus-visible + label {
 /* ========================= Media Queries ========================= */
 /* desktop change at 960px */
 @media screen and (min-width: 60rem) {
+  .form-container {
+    max-width: 25.75rem;
+  }
 }
