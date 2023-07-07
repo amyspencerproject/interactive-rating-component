@@ -81,14 +81,6 @@ input[type="radio"] {
 - appearance: none allows input to be picked up by screen readers
 - focus-visibility allows keyboard users to know what button is selected with out annoying the mouse over users
 
-**Other Things Learned**
-
-- Used a radial gradient with two colors being the same color. Wasn't sure this was correct and double checked the Figma file. A gradient with two colors in CSS is just the same as a mono-colored background. Going to have to come up with something to fix this.
-
-- Reminded myself that it is good practice to style on classes and use ids for programmatic things like JS queriers.
-
-**JS**
-
 - Put event listener on the form not on the submit button click
 
 ### Continued development
