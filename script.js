@@ -19,11 +19,4 @@ addEventListener("submit", (e) => {
       errorText.classList.remove("hide");
     }
   }
-  return;
 });
-
-// event listener on form submit
-// if statement when no rating value has been selected, with user message
-// else statement to move on to changing the UI
-// make sure value is text and then send to the UI `${ratingValue}`
-// Thankyou JSX to the UI
