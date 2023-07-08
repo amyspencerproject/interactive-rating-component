@@ -61,6 +61,7 @@ Mouse hover and Keyboard focus views
   - Finally decided on a radio button form where only one rating choice could be made and submitted by the user. This would make the JS much easier and the user experiance intuitive.
 
 - Radio buttons are used so often that they have a lot of browser specific default styling. Look at the buttons on left in Firefox and on the right in Chrome.
+  
   ![](./screenshots/screenshot%20radio%20buttons.png)
 
 - To wipe out the browser styling use the following reset. You must add custom styling if you do this because it really wipes out the buttons entirely
