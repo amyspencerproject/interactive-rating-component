@@ -11,7 +11,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued Development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -28,7 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/mobile%20view%20rate.png) ![](./screenshots/mobile%20view%20thank%20you.png)
+
+![](./screenshots/hover%20focus%20states.png) ![](./screenshots/hover%20focus%20state%20mouse.png)
 
 ### Links
 
@@ -61,6 +62,7 @@ Users should be able to:
 input[type="radio"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
+  /* appearance: none allows input to be picked up by screen readers */
   appearance: none;
   /* For iOS < 15 to remove gradient background */
   background-color: #fff;
@@ -69,21 +71,20 @@ input[type="radio"] {
 }
 ```
 
-- Used a grid layout for the radio buttons. Allowed for an overall left-alignment and spacing with `gap` between each button.
-
 - Wasn't sure wether to style input or label?
   ![](./screenshots/Screenshot%20discord%20answer.png)
 
 - Pulled the `<input>` out of the `<label>` and added the `for= {id of input}` as an attribute in for `<label`
 - Added a `<fieldset>` around the radio buttons
 - styled the :hover, :checked, :focus-visible using adjacent sibling combinators
-- Used positon:relative on the label to overlap it with the input. I couldn't get this to work in a grid container?? Had to switch to flex with a row nowrap.
-- appearance: none allows input to be picked up by screen readers
-- focus-visibility allows keyboard users to know what button is selected with out annoying the mouse over users
+- Added a div around the `<input>` and `<label>` to make positioning the two elements on top of each other managable
+- focus-visibility allows keyboard users to know what button is selected without annoying the mouse over users. Used an outline instead of a border so the number wouldn't shift when the focus was on.
 
+**JavaScript**
+
+- Used a defer and put the script towards the begining of the index.html
 - Put event listener on the form not on the submit button click
-
-### Continued development
+- Put all the HTML into the index.html and used the class of "hide" to change the majority of the UI with JS script.
 
 ### Useful resources
 

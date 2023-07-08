@@ -85,7 +85,8 @@ select {
   --drk-blue: hsl(213, 19%, 18%);
   --very-drk-blue: hsl(216, 12%, 8%);
   --orange: hsl(25, 97%, 53%);
-  --gradient-black: hsl(215, 20%, 17%);
+  --gradient-black-1: hsl(215, 20%, 17%, 50%);
+  --gradient-black-2: hsl(215, 20%, 17%, 10%);
 }
 
 body {
@@ -100,7 +101,10 @@ main {
 }
 
 .form-container {
-  background: radial-gradient(var(--gradient-black), var(--gradient-black));
+  background-image: linear-gradient(
+    var(--gradient-black-1),
+    var(--gradient-black-2)
+  );
   border-radius: 15px;
   margin: 9.6rem 1.5rem;
   max-width: 20.43rem;
@@ -223,7 +227,7 @@ input:hover + label {
 }
 
 input:focus-visible + label {
-  border: solid 3px var(--orange);
+  outline: solid 3px var(--white);
 }
 
 .label-group {
@@ -262,7 +266,18 @@ input:focus-visible + label {
   color: var(--orange);
 }
 
+.submit-button:focus-visible {
+  outline: solid 2px var(--white);
+}
+
 /* ======= Footer ======= */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0.75rem;
+}
 
 .attribution {
   font-size: 0.8125rem;
