@@ -27,7 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
+Rating and Thank You views
+
 ![](./screenshots/mobile%20view%20rate.png) ![](./screenshots/mobile%20view%20thank%20you.png)
+
+Mouse hover and Keyboard focus views
 
 ![](./screenshots/hover%20focus%20states.png) ![](./screenshots/hover%20focus%20state%20mouse.png)
 
@@ -50,41 +54,45 @@ Users should be able to:
 
 **Radio Button Form**
 
-- Was not sure how to get the nice round rating buttons for this design. Started with using an unordered list with a border-radius of 50% for all the `<li>` elements. Quickly realised that this would not work with JS.
-- Thought about making each rating choice a seperate button but figured that would add a lot of extra steps with JS and then the user would be submitting by choosing a rating and not with a proper submitt button.
-- Finally decided on a radio button form where only one rating choice could be made and submitted by the user. This would make the JS much easier and the user experiance intuitive.
+- Was not sure how to get the nice round rating buttons for this design.
+
+  - Started with using an unordered list with a border-radius of 50% for all the `<li>` elements. Quickly realised that this would not work with JS.
+  - Thought about making each rating choice a seperate button but figured that would add a lot of extra steps with JS and then the user would be submitting by choosing a rating and not with a proper submitt button.
+  - Finally decided on a radio button form where only one rating choice could be made and submitted by the user. This would make the JS much easier and the user experiance intuitive.
 
 - Radio buttons are used so often that they have a lot of browser specific default styling. Look at the buttons on left in Firefox and on the right in Chrome.
   ![](./screenshots/screenshot%20radio%20buttons.png)
+
 - To wipe out the browser styling use the following reset. You must add custom styling if you do this because it really wipes out the buttons entirely
 
-```
-input[type="radio"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  /* appearance: none allows input to be picked up by screen readers */
-  appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: #fff;
-  /* Not removed via appearance */
-  margin: 0;
-}
-```
+  ```
+  input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* appearance: none allows input to be picked up by screen readers */
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+   margin: 0;
+  }
+  ```
 
-- Wasn't sure wether to style input or label?
-  ![](./screenshots/Screenshot%20discord%20answer.png)
+- Wasn't sure whether to style input or label? Asked on the FEM Discord channel and learned that to be cross browser compatible the best option is to keep label and input un-nested, use adjacent sibling combinators, and style on the label. In the future when the :has becomes accepted with browsers like Firefox then nesting can be done successfully.
 
-- Pulled the `<input>` out of the `<label>` and added the `for= {id of input}` as an attribute in for `<label`
-- Added a `<fieldset>` around the radio buttons
-- styled the :hover, :checked, :focus-visible using adjacent sibling combinators
+  - Pulled the `<input>` out of the `<label>` and added the `for= {id of input}` as an attribute in for `<label`.
+  - Added a `<fieldset>` around the radio buttons so that it is very clear that the radio buttons belong together as a group.
+  - Styled the `:hover`, `:checked`, `:focus-visible` using adjacent sibling combinators
+
 - Added a div around the `<input>` and `<label>` to make positioning the two elements on top of each other managable
-- focus-visibility allows keyboard users to know what button is selected without annoying the mouse over users. Used an outline instead of a border so the number wouldn't shift when the focus was on.
+
+- Learned about how `:focus-visibility` allows keyboard users to know what button is selected without annoying the mouse over users. Used an outline instead of a border so the number wouldn't shift when the focus was on.
 
 **JavaScript**
 
 - Used a defer and put the script towards the begining of the index.html
 - Put event listener on the form not on the submit button click
-- Put all the HTML into the index.html and used the class of "hide" to change the majority of the UI with JS script.
+- Put all the HTML into the index.html and used the class of "hide" to change the majority of the UI within JS script.
 
 ### Useful resources
 
