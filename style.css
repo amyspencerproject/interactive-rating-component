@@ -85,8 +85,8 @@ select {
   --drk-blue: hsl(213, 19%, 18%);
   --very-drk-blue: hsl(216, 12%, 8%);
   --orange: hsl(25, 97%, 53%);
-  --gradient-black-1: hsl(215, 20%, 17%, 50%);
-  --gradient-black-2: hsl(215, 20%, 17%, 10%);
+  --gradient-black-1: #232a34;
+  --gradient-black-2: #181e27;
 }
 
 body {
@@ -101,14 +101,10 @@ main {
 }
 
 .form-container {
-  background-image: linear-gradient(
-    var(--gradient-black-1),
-    var(--gradient-black-2)
-  );
+  background: radial-gradient(var(--gradient-black-1), var(--gradient-black-2));
   border-radius: 15px;
   margin: 9.6rem 1.5rem;
   max-width: 20.43rem;
-  /* background-color: var(--very-drk-blue); */
 }
 
 .form-wrapper {
@@ -123,11 +119,6 @@ p {
 
 h1 {
   color: var(--white);
-}
-
-.hide {
-  visibility: hidden;
-  display: none !important;
 }
 
 .image-star {
@@ -268,6 +259,11 @@ input:focus-visible + label {
 
 .submit-button:focus-visible {
   outline: solid 2px var(--white);
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
 }
 
 /* ======= Footer ======= */

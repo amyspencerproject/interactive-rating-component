@@ -91,8 +91,14 @@ Mouse hover and Keyboard focus views
 **JavaScript**
 
 - Used a defer and put the script towards the begining of the index.html
-- Put event listener on the form not on the submit button click
-- Put all the HTML into the index.html and used the class of "hide" to change the majority of the UI within JS script.
+- Put event listener on the form with a "submit" because this is better JS practice than just using a "click" on the submitt button.
+- Put all the HTML into the index.html and used the class of "hide" to change the majority of the UI within JS script. Ran into an issue where the "hide" class with a `display:none` would not override the `display:flex` for the form after a rating was submitted. I used a !important to get around this temporarily. Got some feedback from the FEM community about the issue.
+
+- Turns out the order of CSS rules matter! I had moved the "hide" class to the top of the CSS file. Since the specificity of the "thankyou-wrapper" and the "hide" classes are equal the last one to be read takes precedent. Therefore `.thankyou-wrapper {
+display: flex;
+} ` must be listed before `.hide {
+display: none;
+}` in order for the thank you message to be hidden.
 
 ### Useful resources
 
